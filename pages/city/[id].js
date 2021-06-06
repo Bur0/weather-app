@@ -11,7 +11,7 @@ export default function City() {
 
   const {data, error} = useSwr(
     router.query.id
-      ? `http://api.openweathermap.org/data/2.5/forecast?q=${router.query.id}&appid=${process.env.apiKey}&units=metric&lang=tr`
+      ? `https://api.openweathermap.org/data/2.5/forecast?q=${router.query.id}&appid=${process.env.apiKey}&units=metric&lang=tr`
       : null,
     fetcher
   );

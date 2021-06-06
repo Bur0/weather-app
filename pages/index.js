@@ -11,7 +11,7 @@ export default function Home() {
   function handleSubmit(e) {
     e.preventDefault();
     setLoading(true);
-    fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${e.target.city.value}&appid=${process.env.apiKey}`)
+    fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${e.target.city.value}&appid=${process.env.apiKey}`)
       .then((res) => res.json())
       .then((data) => setCitys(data))
       .catch((error) => {
