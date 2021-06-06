@@ -1,10 +1,9 @@
 # Weather App - Next.js
 
-## Kurulum
-
-İnstall
+## Install
 
 ```bash
+cp next.config.js.example next.config.js
 yarn install
-yarn dev
+yarn dev && yarn build
 ```
