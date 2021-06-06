@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+tr:nth-child(even) {
+  @apply bg-gray-100;
+}
+td {
+  padding: 6px 10px;
+}
+
+thead {
+  @apply border border-gray-200;
+}
